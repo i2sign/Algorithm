@@ -1,0 +1,2 @@
+# Algorithm
+day by day
