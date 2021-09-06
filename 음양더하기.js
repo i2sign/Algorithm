@@ -12,7 +12,7 @@ function solution(absolutes, signs) {
         }
     }
     return absolutes.reduce((acc,cur)=>
-                            acc+cur, 0)
+      acc+cur, 0)
 }
 
 //solution: sign의 i번째 인덱스가 false 인 경우만 찾아내서 음수 처리 해준 뒤 합계를 구한다
