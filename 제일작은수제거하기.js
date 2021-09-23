@@ -2,20 +2,20 @@
 // limits: arr은 길이 1 이상인 배열입니다.
 // 인덱스 i, j에 대해 i ≠ j이면 arr[i] ≠ arr[j] 입니다.
 
-//solution: 주어진 배열을 순회하며 가장 작은 숫자를 찾은 뒤, 그 숫자의 인덱스를 알아내서 삭제처리하기. 단 빈배열일 경우 배열에 -1을 채워 리턴하기.
 function solution(arr) {
       let min = arr[0]
       for(let i=1; i<arr.length; i++){
-          if(arr[i] < min){
-              min = arr[i]
-          }
+            if(arr[i] < min){
+                  min = arr[i]
+            }
       }
       let idx = arr.indexOf(min)
       arr.splice(idx, 1)
       if(arr.length === 0){
-          return [-1]
+            return [-1]
       }
       else{
-          return arr
+            return arr
       }
-  }
+}
+//solution: 주어진 배열을 순회하며 가장 작은 숫자를 찾은 뒤, 그 숫자의 인덱스를 알아내서 삭제처리하기. 단 빈배열일 경우 배열에 -1을 채워 리턴하기.

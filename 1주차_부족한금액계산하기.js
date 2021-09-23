@@ -6,17 +6,18 @@
 // 처음 가지고 있던 금액 money : 1 ≤ money ≤ 1,000,000,000, money는 자연수
 // 놀이기구의 이용 횟수 count : 1 ≤ count ≤ 2,500, count는 자연수
 
-//solutions : 반복문을 count만큼 돌려서 필요한 금액을 알아낸 후 money 에서 대소비교를 한다음에 출력값 return 하기
 
 function solution(price, money, count) {
       let total = 0;
       for(let i=1; i<=count; i++){
-          total = total + ( i * price)
+            total = total + ( i * price)
       }
       if( total - money <= 0){
-          return 0
+            return 0
       }
       else {
-          return Math.abs(money - total)
+            return Math.abs(money - total)
       }
-  }
+}
+
+//solutions : 반복문을 count만큼 돌려서 필요한 금액을 알아낸 후 money 에서 대소비교를 한다음에 출력값 return 하기
