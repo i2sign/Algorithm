@@ -3,8 +3,6 @@
 // nums의 각 원소는 1 이상 1,000 이하의 자연수이며, 중복된 숫자가 들어있지 않습니다.
 
 function solution(nums) {
-      //서로다른 3개의 수를 어떻게 더하지 ?
-      //3차 반복문을 돌면서 더하기
       let result = [];
       let count = 0
       let result2 = []
@@ -31,3 +29,5 @@ function solution(nums) {
       }
       return result2.length;
   }
+
+//solution: 3개
