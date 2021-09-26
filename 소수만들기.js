@@ -30,4 +30,4 @@ function solution(nums) {
       return result2.length;
   }
 
-//solution: 3개
+//solution: 3개의 숫자로 만들 수 있는 모든 숫자 확인 후 그 숫자가 소수인지 확인해서 갯수 출력하기
